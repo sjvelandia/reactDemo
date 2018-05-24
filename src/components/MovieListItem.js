@@ -2,8 +2,12 @@ import React from 'react';
 
 const movieListItem = (props) => (
     <div className="movie-card">
-        <h3>{props.movie.title}</h3>
-        <div>{props.movie.release_year}</div>
+        <ul>
+            <li><h4 className="movie-title">{props.movie.title}</h4></li>
+            <li><div className="movie-year">{props.movie.release_year}</div></li>
+        </ul>
+        
+        
         <div className="movie-location">{props.movie.locations}</div>
     </div>
 );
